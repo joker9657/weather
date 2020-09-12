@@ -3,7 +3,6 @@
 namespace Joker\Weather;
 
 use GuzzleHttp\Client;
-use Joker\Weather\Exceptions\Exception;
 use Joker\Weather\Exceptions\HttpException;
 use Joker\Weather\Exceptions\InvalidArgumentException;
 
@@ -37,7 +36,7 @@ class Weather
         }
 
         if (!\in_array(\strtolower($type), ['base', 'all'])) {
-            throw new InvalidArgumentException('Invalid type value(base/all): ' . $type);
+            throw new InvalidArgumentException('Invalid type value(base/all): '.$type);
         }
 
         $query = array_filter([
@@ -58,10 +57,10 @@ class Weather
     }
 
     /**
-     * 获取实时天气
-     * @param string $city
-     * @param string $format
+     * 获取实时天气.
+     *
      * @return mixed|string
+     *
      * @throws HttpException
      * @throws InvalidArgumentException
      */
@@ -71,10 +70,10 @@ class Weather
     }
 
     /**
-     * 获取天气预报
-     * @param string $city
-     * @param string $format
+     * 获取天气预报.
+     *
      * @return mixed|string
+     *
      * @throws HttpException
      * @throws InvalidArgumentException
      */
