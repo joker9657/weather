@@ -2,6 +2,7 @@
 
 <p align="center"> A weather SDK.</p>
 
+![StyleCI build status](https://github.styleci.io/repos/294700210/shield) 
 
 ## Installing
 
