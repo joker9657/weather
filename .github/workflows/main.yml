@@ -23,5 +23,8 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs phpunit
-      - name: Laravel PHPUnit
-        uses: nathanheffley/laravel-phpunit-action@v0.1.0
+      - name: PHPUnit tests
+        uses: php-actions/phpunit@v9
+        with:
+            configuration: custom/path/to/phpunit.xml
+            memory_limit: 256M
