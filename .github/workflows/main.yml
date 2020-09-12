@@ -26,5 +26,4 @@ jobs:
       - name: PHPUnit tests
         uses: php-actions/phpunit@v9
         with:
-            configuration: custom/path/to/phpunit.xml
             memory_limit: 256M
