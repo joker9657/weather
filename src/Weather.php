@@ -3,7 +3,6 @@
 namespace Joker\Weather;
 
 use GuzzleHttp\Client;
-use Joker\Weather\Exceptions\Exception;
 use Joker\Weather\Exceptions\HttpException;
 use Joker\Weather\Exceptions\InvalidArgumentException;
 

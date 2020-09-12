@@ -82,11 +82,9 @@ class WeatherTest extends TestCase
 
     public function testGetHttpClient()
     {
-
     }
 
     public function testSetGuzzleOptions()
     {
-
     }
 }
